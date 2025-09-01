@@ -5,6 +5,7 @@ class Person {
   }
 }
 ```
+## اللي فوق هو هو اللي تحت بس اختلاف اللغة 
  ```Python
 class Person:
     def __init__(self, **kwargs):
