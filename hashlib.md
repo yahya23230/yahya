@@ -1,4 +1,4 @@
-##library of hashlib for Encrypting the input which the user enter it
+### library of hashlib for Encrypting the input which the user enter it
 
 
 مكتبة مسؤولة عن التشفير (hashing).
