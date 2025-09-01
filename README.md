@@ -10,4 +10,5 @@ user_input = '<script>alert("XSS")</script>'
 safe_input = html.escape(user_input)
 
 print("Original:", user_input)
-print("Escaped:", safe_input) ```
+print("Escaped:", safe_input)
+
