@@ -1,4 +1,14 @@
 ## library of html for Encoding the input which the user enter it 
+
+دي مكتبة مدمجة في بايثون علشان تتعامل مع النصوص اللي فيها HTML.
+
+أهم دالة فيها: html.escape()
+
+بتحول < → &lt;
+
+> → &gt;
+
+& → &amp;
                                                                                                                                      
 ```python
 import html
