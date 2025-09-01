@@ -16,12 +16,10 @@ user_input = "<script>alert(1)</script>"
 safe = html.escape(user_input)
 print(safe)  #  الناتج →  &lt;script&gt;alert(1)&lt;/script&gt    ( & → &amp;)   (  > → &gt;  )   ( < → &lt; )
 
-
-< اتحولت → &lt;
-
-> اتحولت → &gt;
-
-" اتحولت → &quot;
+### html.escape prevent from XSS 
+# convert      < → &lt;   
+# convert      > → &gt;
+# convert     & → &amp;
 
  
 
