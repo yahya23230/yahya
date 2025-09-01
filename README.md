@@ -6,11 +6,7 @@
 
 
 بتحول          
-``` < → &lt;
-
-> → &gt;
-
-& → &amp;                                                                                                                                
+                                                                                                                               
 ```  python
 import html
 
