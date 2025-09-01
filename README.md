@@ -14,7 +14,7 @@ user_input = "<script>alert(1)</script>"
 
 # Encode it safely
 safe = html.escape(user_input)
-print(safe)  #  الناتج  &lt;script&gt;alert(1)&lt;/script&gt    ( & → &amp;)   (  > → &gt;  )   ( < → &lt; )
+print(safe)  #  الناتج →  &lt;script&gt;alert(1)&lt;/script&gt    ( & → &amp;)   (  > → &gt;  )   ( < → &lt; )
 
 
 < اتحولت → &lt;
