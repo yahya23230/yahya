@@ -1,8 +1,5 @@
 
 
-convert  ( < ) to ( &lt;)  
-convert ( > ) to ( &lt; )
-convert     & → &amp;
 
 
 ```python
@@ -18,3 +15,6 @@ print("Enter your name :")
 name = sanitize_input(input("Your Name : "))
 print("Sanitized:", name)
 
+# convert      < → &lt;   
+convert      > → &gt;
+convert     & → &amp;
