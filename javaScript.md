@@ -5,7 +5,7 @@ class Person {
   }
 }
 
-``` python
+ ``` python
 class Person:
     def __init__(self, **kwargs):
         self.data = kwargs
