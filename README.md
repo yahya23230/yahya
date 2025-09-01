@@ -10,9 +10,8 @@
 
 > → &gt;
 
-& → &amp;  ```                                                                                                                                  
-
-```python
+& → &amp;                                                                                                                                
+```  python
 import html
 
 # Example input that contains XSS payload
