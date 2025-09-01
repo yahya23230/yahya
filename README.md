@@ -6,11 +6,11 @@
 
 
 بتحول          
-                                                                                                                                                                      < → &lt;
-
-                                                                                                                                                                      > → &gt;
-
-                                                                                                                                                                     & → &amp;
+                                                                                                                                                                                                      < → &lt;
+                                
+                                                                                                                                                                                                      > → &gt;
+                                
+                                                                                                                                                                                                     & → &amp;
                                                                                                                                      
 ```python
 import html
