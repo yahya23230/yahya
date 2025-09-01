@@ -4,7 +4,7 @@ class Person {
     this.data = data;
   }
 }
-
+```
  ```Python
 class Person:
     def __init__(self, **kwargs):
