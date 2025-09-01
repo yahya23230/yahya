@@ -4,11 +4,12 @@
 
 أهم دالة فيها: html.escape()
 
-بتحول < → &lt;
 
-> → &gt;
+بتحول             < → &lt;
 
-& → &amp;
+                                                                                                                                                                      > → &gt;
+
+                                                                                                                                                                     & → &amp;
                                                                                                                                      
 ```python
 import html
