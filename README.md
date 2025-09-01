@@ -1,6 +1,6 @@
 ## library of html for Encoding the input which the user enter it 
                                                                                                                                      
-``` python
+``` 
 import html
 
 # Example input that contains XSS payload
