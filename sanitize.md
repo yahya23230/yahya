@@ -15,6 +15,7 @@ print("Enter your name :")
 name = sanitize_input(input("Your Name : "))
 print("Sanitized:", name)
 
+### html.escape prevent from XSS 
 # convert      < → &lt;   
-convert      > → &gt;
-convert     & → &amp;
+# convert      > → &gt;
+# convert     & → &amp;
