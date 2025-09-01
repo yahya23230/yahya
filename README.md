@@ -5,7 +5,7 @@
 أهم دالة فيها: html.escape()
 
 
-بتحول          
+بتحول          < → &lt;           و   > → &gt;     و   & → &amp;
                                                                                                                                
 ```  python
 import html
