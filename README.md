@@ -37,5 +37,5 @@ import hashlib
 
 password = "mypassword"
 hashed = hashlib.md5(password.encode()).hexdigest()
-print(hashed)  # e.g. 34819d7beeabb9260a5c854bc85b3e44
+print(hashed)  # e.g. 34819d7beeabb9260a5c854bc85b3e44   
 
