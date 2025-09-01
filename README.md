@@ -10,7 +10,7 @@
 
 > → &gt;
 
-& → &amp;                                                                                                                                    
+& → &amp;  ```                                                                                                                                  
 
 ```python
 import html
