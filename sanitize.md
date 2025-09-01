@@ -1,6 +1,7 @@
 ### html.escape ( )   prevent from XSS
 ### re.sub ( )      Replace symbol  to spaces 
 ##sanitize_input that name of function , you name it anything if you like 
+ 
    اسم دالة تقدر تسميها زي ما انت عايز .
 
 ```python
