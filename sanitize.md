@@ -1,8 +1,8 @@
 
 
-html.escape(...)
-يحوّل الأحرف الخاصة زي < > & إلى &lt; &gt; &amp; علشان يمنع إدخال XSS.
-
+convert  ( < ) to ( &lt;)  
+convert ( > ) to ( &lt; )
+convert     & → &amp;
 
 
 ```python
