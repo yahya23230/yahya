@@ -2,32 +2,39 @@
 package main
 
 import (
-    "encoding/json"
     "fmt"
-    "net/http"
     "io/ioutil"
+    "net/http"
 )
 
 func main() {
-    // نطلب البيانات من API بسيط
-    response, err := http.Get("https://api.github.com")
-    if err != nil {
-        fmt.Println("Error:", err)
-        return
-    }
-    defer response.Body.Close()
+    url := "https://api.example.com/v1/users" // <-- غيره حسب API الحقيقي
+    apiKey := "YOUR_API_KEY_HERE"
 
-    // نقرأ البيانات
-    body, err := ioutil.ReadAll(response.Body)
+    // نعمل request جديد من النوع GET
+    req, err := http.NewRequest("GET", url, nil)
     if err != nil {
-        fmt.Println("Error reading:", err)
+        fmt.Println("Error creating request:", err)
         return
     }
 
-    // نحول JSON إلى خريطة map
-    var data map[string]interface{}
-    json.Unmarshal(body, &data)
+    // نضيف الـ API key داخل الـ Header
+    req.Header.Add("Authorization", "Bearer "+apiKey)
+    req.Header.Add("Accept", "application/json")
 
-    // نطبع قيمة معينة من JSON
-    fmt.Println("User API:", data["current_user_url"])
+    // نستخدم client علشان ننفذ الطلب
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    if err != nil {
+        fmt.Println("Error sending request:", err)
+        return
+    }
+    defer resp.Body.Close()
+
+    // نقرأ الرد
+    body, _ := ioutil.ReadAll(resp.Body)
+
+    fmt.Println("Status:", resp.Status)
+    fmt.Println("Response:", string(body))
 }
+
