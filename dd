@@ -31,3 +31,4 @@ func main() {
     // نطبع قيمة معينة من JSON
     fmt.Println("User API:", data["current_user_url"])
 }
+```
