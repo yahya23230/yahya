@@ -2,39 +2,28 @@
 package main
 
 import (
+    "bytes"
     "fmt"
     "io/ioutil"
-    "net/http"
 )
 
 func main() {
-    url := "https://api.example.com/v1/users" // <-- غيره حسب API الحقيقي
-    apiKey := "YOUR_API_KEY_HERE"
+    jsonData := []byte(`{"username":"yehia"}`)
 
-    // نعمل request جديد من النوع GET
-    req, err := http.NewRequest("GET", url, nil)
-    if err != nil {
-        fmt.Println("Error creating request:", err)
-        return
-    }
+    // نحط البيانات داخل Buffer
+    buf := bytes.NewBuffer(jsonData)
 
-    // نضيف الـ API key داخل الـ Header
-    req.Header.Add("Authorization", "Bearer "+apiKey)
-    req.Header.Add("Accept", "application/json")
+    // نقرأ منها أول مرة
+    first, _ := ioutil.ReadAll(buf)
+    fmt.Println("القراءة الأولى:", string(first))
 
-    // نستخدم client علشان ننفذ الطلب
-    client := &http.Client{}
-    resp, err := client.Do(req)
-    if err != nil {
-        fmt.Println("Error sending request:", err)
-        return
-    }
-    defer resp.Body.Close()
-
-    // نقرأ الرد
-    body, _ := ioutil.ReadAll(resp.Body)
-
-    fmt.Println("Status:", resp.Status)
-    fmt.Println("Response:", string(body))
+    // نحاول نقرأ تاني
+    second, _ := ioutil.ReadAll(buf)
+    fmt.Println("القراءة الثانية:", string(second))
 }
+النتيجة:
 
+css
+Copy code
+القراءة الأولى: {"username":"yehia"}
+القراءة الثانية: 
