@@ -23,7 +23,6 @@ func main() {
 }
 النتيجة:
 
-css
-Copy code
+
 القراءة الأولى: {"username":"yehia"}
 القراءة الثانية: 
