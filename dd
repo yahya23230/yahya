@@ -1,4 +1,4 @@
-```Go 
+```Goland
 package main
 
 import (
