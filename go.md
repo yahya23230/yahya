@@ -21,6 +21,8 @@ func main() {
     second, _ := ioutil.ReadAll(buf)
     fmt.Println("القراءة الثانية:", string(second))
 }
+
+
 النتيجة:
 
 
